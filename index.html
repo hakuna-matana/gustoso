@@ -7,22 +7,272 @@
   <title>Document</title>
 </head>
 <body>
-<header class="header">
-  <div class="header__wrapper">
-    <div class="logo">
+<header class="page-header">
+  <div class="page-header__wrapper">
+    <div class="page-header__top">
+      <div class="page-header__logo  logo">
+        <a class="logo__link" href="#">Gustoso</a>
+      </div>
+      <nav class="page-header__navigation  navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">welcome</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#">menu</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#">reservations</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#">news</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#">contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="page-header__social  social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="#" class="socil__link  socil__link--twitter">twitter</a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="socil__link  socil__link--facebook">facebook</a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="socil__link  socil__link--instagram">instagram</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="page-header__greeting greeting">
+      <h1 class="greeting__title">Pastry with love</h1>
+      <p class="greeting__description">We're bringing you fresh ingredients every day in ways you can't resist.</p>
+      <a href="#" class="greeting__link button">our menu</a>
+    </div>
+  </div>
+</header>
+
+<main class="page-main">
+  <div class="page-main__wrapper">
+    <section class="page-main__about  about">
+      <div class="about__text">
+        <h2 class="about__title">Art of cakes</h2>
+        <b class="about__subtitle">We create delicious memories</b>
+        <p class="about__description">Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed.</p>
+        <blockquote class="about__quote  quote">
+          <h3 class="quote__title">Chef cook</h3>
+          <div class="quote__author">
+            <cite class="quote__author-name">Benito</cite>
+            <img class="quote__author-photo" src="img/portrait.png" alt="portrait" width="100" height="100">
+            <cite class="quote__author-name">Gaspare</cite>
+          </div>
+          <q class="quote__citation">Unique creations for unique
+              occasions.</q>
+        </blockquote>
+      </div>
+      <div class="about__pictures">
+        <img class="about__image" src="img/img_1.jpg" width="295" height="250" alt>
+        <img class="about__image" src="img/img_2.jpg" width="295" height="250" alt>
+        <img class="about__image" src="img/img_3.jpg" width="295" height="250" alt>
+        <img class="about__image" src="img/img_4.jpg" width="295" height="250" alt>
+        <div class="about__slogan">Tastes so good!</div>
+      </div>
+    </section>
+
+    <section class="page-main__dishes  dishes">
+      <h2 class="dishes__title visually-hidden">Our dishes</h2>
+      <section class="dishes__item">
+        <img class="dishes__image" src="img/menu.png" width="585" height="512" alt="">
+        <div class="dishes__description">
+          <h3 class="dishes__title">Tasty pancakes</h3>
+          <b class="dishes__subtitle">season favourite</b>
+          <p class="dishes__text">Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus.</p>
+        </div>
+        <div class="dishes__time">
+          <b class="dishes__time-text">ready in</b>
+          <p class="dishes__time-values">40</p>
+          <span class="dishes__time-unit">min</span>
+        </div>
+      </section>
+      <section class="dishes__item">
+        <img class="dishes__image" src="img/menu-1.png" width="585" height="512" alt="">
+        <div class="dishes__description">
+            <h3 class="dishes__title">Salami sandwich</h3>
+            <b class="dishes__subtitle">the most popular</b>
+            <p class="dishes__text">Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus.</p>
+          </div>
+          <div class="dishes__time">
+            <b class="dishes__time-text">ready in</b>
+            <p class="dishes__time-values">20</p>
+            <span class="dishes__time-unit">min</span>
+          </div>
+      </section>
+      <section class="dishes__item">
+        <img class="dishes__image" src="img/menu-2.png" width="585" height="512" alt="">
+        <div class="dishes__description">
+            <h3 class="dishes__title">Berry dessert</h3>
+            <b class="dishes__subtitle">summer choice</b>
+            <p class="dishes__text">Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus.</p>
+          </div>
+          <div class="dishes__time">
+            <b class="dishes__time-text">ready in</b>
+            <p class="dishes__time-values">5</p>
+            <span class="dishes__time-unit">min</span>
+          </div>
+      </section>
+      <section class="dishes__item">
+        <img class="dishes__image" src="img/menu-3.png" width="585" height="512" alt="">
+        <div class="dishes__description">
+            <h3 class="dishes__title">Fresh salad</h3>
+            <b class="dishes__subtitle">the most useful</b>
+            <p class="dishes__text">Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus.</p>
+          </div>
+          <div class="dishes__time">
+            <b class="dishes__time-text">ready in</b>
+            <p class="dishes__time-value">15</p>
+            <span class="dishes__time-unit">mins</span>
+          </div>
+      </section>
+      <div class="tabs">
+        <button class="tabs__arrow tabs__arrow--prev" type="button">previous</button>
+        <ul class="tabs__list">
+          <li class="tabs__item">
+            <img class="tabs__image" src="img/slider.png" alt="" width="90" height="90">
+          </li>
+          <li class="tabs__item">
+            <img class="tabs__image" src="img/slider_1.png" alt="" width="90" height="90">
+          </li>
+          <li class="tabs__item">
+            <img class="tabs__image" src="img/slider_2.png" alt="" width="90" height="90">
+          </li>
+          <li class="tabs__item">
+            <img class="tabs__image" src="img/slider_3.png" alt="" width="90" height="90">
+          </li>
+        </ul>
+        <button class="tabs__arrow tabs__arrow--next" type="button">next</button>
+      </div>
+    </section>
+
+    <section class="page-main__breakfast  breakfast">
+      <div class="breakfast__menu">
+        <h2 class="breakfast__title">Breakfast</h2>
+        <b class="breakfast__subtitle"><sub>7</sub>am Breakfast? we’re open!</b>
+        <ul class="breakfast__list">
+          <li class="breakfast__item">
+            <h3 class="breakfast__name">Full breakfast</h3>
+            <p class="breakfast__description">Duis ut tortor, et risus, vulputate pretium</p>
+            <span class="breakfast__cost">$12.49</span>
+          </li>
+          <li class="breakfast__item">
+            <h3 class="breakfast__name">Toast &amp; Jam</h3>
+            <p class="breakfast__description">Suspendisse, tempus, nterdum</p>
+            <span class="breakfast__cost">$4.90</span>
+          </li>
+          <li class="breakfast__item">
+            <h3 class="breakfast__name">Muffins</h3>
+            <p class="breakfast__description">Fusce eget dui sodales est</p>
+            <span class="breakfast__cost">$3.95</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="breakfast__book book">
+        <div class="book__page  book__page--main">
+          <div class="book__date">EST. 1893</div>
+          <h3 class="book__title">Your morning Escape with Flair</h3>
+          <p class="book__description">Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo.</p>
+          <a class="book__link button" href="#">read</a>
+        </div>
+        <div class="book__page  book__page--2"></div>
+        <div class="book__page  book__page--3"></div>
+      </div>
+      
+    </section>
+
+    <section class="page-main__best  best">
+      <div class="best__header">
+        <h2 class="best__title">The Jibarito sandwich</h2>
+        <b class="best__subtitle">the best sandwich you’ve ever tasted!</b>
+      </div>
+      <div class="best__ingredients">
+        <ul class="best__list">
+          <li class="best__item">
+            <img class="best__item-icon" src="img/ingredients_1.png" width="100" height="100" alt="">
+            <h3 class="best__item-title">Class aptent</h3>
+            <p class="best__item-text">Quot alienum persecuti ut eam, nam ad atqui primis nusquam.</p>
+          </li>
+          <li class="best__item">
+            <img class="best__item-icon" src="img/ingredients_2.png" width="100" height="100" alt="">
+            <h3 class="best__item-title">Nulla eget</h3>
+            <p class="best__item-text">Nullam dictum felis eu pede mollis pretium Integer tincidunt.</p>
+          </li>
+          <li class="best__item">
+            <img class="best__item-icon" src="img/ingredients_3.png" width="100" height="100" alt="">
+            <h3 class="best__item-title">Sed nibh purus</h3>
+            <p class="best__item-text"> Aenean eleifend tellus leo ligula, porttitor eu, consequat vitae.</p>
+          </li>
+        </ul>
+      </div>
+      <div class="best__picture">
+        <img class="best__image" src="img/recipe_sandwich.jpg" width="840" height="556" alt="">
+        <a class="best__link button" href="#">full recipe</a>
+        <ul class="best__time-list">
+          <li class="best__time-item">
+            <b class="best__time-text">prep</b>
+            <p class="best__time-value">15</p>
+            <span class="best__time-unit">mins</span>
+          </li>
+          <li class="best__time-item">
+            <b class="best__time-text">cook</b>
+            <p class="best__time-value">35</p>
+            <span class="best__time-unit">mins</span>
+          </li>
+          <li class="best__time-item  best__time-item--main">
+            <b class="best__time-text">ready in</b>
+            <p class="best__time-value">50</p>
+            <span class="best__time-unit">mins</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="page-footer">
+  <div class="page-footer__wrapper">
+    <nav class="page-footer__navigation  page-footer__navigation--left  footer-nav">
+      <ul class="footer-nav__list">
+        <li class="footer-nav__item">
+          <a href="#" class="footer-nav__link">our menu</a>
+        </li>
+        <li class="footer-nav__item">
+          <a href="#" class="footer-nav__link">gallery</a>
+        </li>
+        <li class="footer-nav__item">
+          <a href="#" class="footer-nav__link">culture</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="page-footer__logo  logo">
       <a class="logo__link" href="#">Gustoso</a>
     </div>
-    <nav class="navigation">
-      <ul class="navigation__list">
-        <li class="navigation__item"><a class="navigation__link" href="#">welcome</a></li>
-        <li><a href="#">menu</a></li>
-        <li><a href="#">reservations</a></li>
-        <li><a href="#">news</a></li>
-        <li><a href="#">contact</a></li>
+    <nav class="page-footer__navigation  page-footer__navigation-right  footer-nav">
+      <ul class="footer-nav__list">
+        <li class="footer-nav__item">
+          <a href="#" class="footer-nav__link">events</a>
+        </li>
+        <li class="footer-nav__item">
+          <a href="#" class="footer-nav__link">catering</a>
+        </li>
+        <li class="footer-nav__item">
+          <a href="#" class="footer-nav__link">visit us</a>
+        </li>
       </ul>
     </nav>
   </div>
-</header>
+</footer>
   
 </body>
 </html>
