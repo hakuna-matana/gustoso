@@ -1,13 +1,18 @@
 .page-header {
   .container();
+  position: relative;
+  height: 100%;
   background-image: url("../img/bg_header.jpg");
-  background-position: 0 center;
+  background-position: center 0;
+  background-size: cover;
 }
 
 .page-header__wrapper {
   .container(280px);
+  height: 100%;
 }
 
 .page-header__top {
+  min-height: 70px;
   background-color: fade(#56534c, 70%);
 }
