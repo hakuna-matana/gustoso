@@ -423,6 +423,8 @@ body {
 }
 .no-scroll {
   position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
   overflow-y: scroll;
 }
 @font-face {
@@ -577,14 +579,14 @@ body {
   color: white;
   text-shadow: 0px 1px #3d3029;
   font-family: "PlayfairDisplay", serif;
-  font-size: 46px;
+  font-size: 24px;
   letter-spacing: 0.075em;
 }
 .greeting__title::after {
   content: "";
   display: block;
-  margin-top: 40px;
-  margin-bottom: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
   width: 160px;
@@ -594,13 +596,13 @@ body {
 }
 .greeting__description {
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   text-align: center;
   color: white;
   text-shadow: 0px 1px #3d3029;
   font-family: "ProximaNova", sans-serif;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 20px;
   letter-spacing: 0.1em;
 }
 .greeting__link {

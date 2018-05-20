@@ -17,7 +17,7 @@ button.onclick = function(event) {
 
     list.classList.remove('navigation__list--closed');
     nav.classList.add('navigation--opened');
-    // document.body.classList.add('no-scroll');
+    document.body.classList.add('no-scroll');
     return;
   };
   if (button.classList.contains('navigation__toggle--opened')) {
@@ -26,6 +26,6 @@ button.onclick = function(event) {
 
     list.classList.add('navigation__list--closed');
     nav.classList.remove('navigation--opened');
-    // document.body.classList.remove('no-scroll');
+    document.body.classList.remove('no-scroll');
   };
 }
