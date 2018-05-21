@@ -673,6 +673,9 @@ body {
   height: 250px;
   margin-bottom: 10px;
 }
+.about__item:nth-child(-n + 2) {
+  display: none;
+}
 .about__item:after {
   content: "";
   position: absolute;
@@ -763,7 +766,7 @@ body {
   text-align: center;
   quotes: none;
   font-family: "Scriptina", serif;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 30px;
   letter-spacing: 0.025em;
 }
