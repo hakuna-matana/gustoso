@@ -466,27 +466,6 @@ body {
   background-image: url("../img/bg_header.jpg");
   background-position: center 0;
   background-size: cover;
-  border-bottom: 10px solid white;
-}
-.page-header:after,
-.page-header:before {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, 50%);
-}
-.page-header:before {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  background-color: white;
-}
-.page-header:after {
-  width: 106px;
-  height: 106px;
-  background-image: url("../img/icon_bun.png");
 }
 .page-header__wrapper {
   max-width: 280px;
