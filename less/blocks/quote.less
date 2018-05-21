@@ -1,0 +1,98 @@
+.quote {
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.quote__title {
+  color: @gray;
+  text-align: center;  
+  font-family: "Alegreya", serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  letter-spacing: 0.025em;
+}
+
+.quote__author {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quote__author-photo {
+  border: 5px solid white;
+  border-radius: 50%;
+}
+
+.quote__author-name {
+  // width: 111px;
+  position: relative;
+  width: 80px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: @gray;
+  text-align: center;  
+  font-family: "Alegreya", serif;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 0.025em;
+
+  &:after,
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #d7d5ca;
+  }
+
+  &:after {
+    bottom: 0;
+  }
+
+  &:before {
+    top: 0;
+  }
+}
+
+.quote__citation {
+  position: relative;
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: @brown;
+  text-align: center;
+  quotes: none;
+  font-family: "Scriptina", serif;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.025em;
+
+  &:after, &:before {
+    position: absolute;
+    display: block;
+    height: 15px;
+    color: #b6b5b2;
+    font-size: 60px;
+    line-height: 45px;
+    font-family: "Times New Roman", sans-serif;
+    letter-spacing: 0.025em;
+  }
+  &:before {
+    content: "\201c";
+    top: 0;
+    left: 0;
+  }
+
+  &:after {
+    content: "\201f";
+    bottom: 0;
+    right: 0;
+    transform: rotate(180deg);
+  }
+}

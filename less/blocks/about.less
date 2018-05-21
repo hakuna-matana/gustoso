@@ -1,4 +1,70 @@
 .about {
+  padding-top: 70px;
   background-image: url("../img/bg_texture.jpg");
   background-position: 0 0;
+}
+
+.about__text-block {
+  .container(280px);
+}
+
+.about__title {
+  .style-title();
+}
+
+.about__subtitle {
+  .style-subtitle();
+}
+
+.about__description {
+  .style-description();
+  margin-top: 35px;
+}
+
+.about__pictures {
+  .container();
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about__item {
+  position: relative;
+  width: 295px;
+  height: 250px;
+  margin-bottom: 10px;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 273px;
+    height: 228px;
+    border: 5px solid white;
+  }
+}
+
+.about__slogan {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 279px;
+  height: 184px;
+  padding-top: 95px;
+  background-image: url("../img/subsrtare.png");
+  opacity: 0.9;
+
+  color: @gold;
+  text-align: center;
+  font-family: "Alegreya", serif;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: 0.05px;
+  text-transform: uppercase;
 }

@@ -5,6 +5,28 @@
   background-image: url("../img/bg_header.jpg");
   background-position: center 0;
   background-size: cover;
+  border-bottom: 10px solid white;
+  &:after, &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+
+  &:before {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: white;
+  }
+
+  &:after {
+    width: 106px;
+    height: 106px;
+    background-image: url("../img/icon_bun.png");
+  }
 }
 
 .page-header__wrapper {
@@ -14,5 +36,5 @@
 
 .page-header__top {
   min-height: 70px;
-  background-color: fade(#56534c, 70%);
+  background-color: fade(@gray, 70%);
 }
