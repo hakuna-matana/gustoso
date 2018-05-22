@@ -466,6 +466,7 @@ body {
   margin-right: auto;
   position: relative;
   height: 100%;
+  background-color: #979995;
   background-image: url("../img/bg_header.jpg");
   background-position: center 0;
   background-size: cover;
@@ -619,7 +620,8 @@ body {
   margin-right: auto;
 }
 .about {
-  padding-top: 70px;
+  padding-top: 60px;
+  background-color: #fcfbf8;
   background-image: url("../img/bg_texture.jpg");
   background-position: 0 0;
 }
@@ -798,6 +800,7 @@ body {
 .dishes {
   padding-top: 60px;
   padding-bottom: 90px;
+  background-color: #dfe0d7;
   background-image: url("../img/bg_dishes.jpg");
   background-position: center 0;
   background-size: cover;
@@ -814,19 +817,23 @@ body {
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
+  box-shadow: 0px -20px 40px -15px rgba(0, 0, 0, 0.2), 20px 10px 40px -10px rgba(0, 0, 0, 0.2), -25px -10px 40px -15px rgba(0, 0, 0, 0.2), 10px 25px 40px -15px rgba(0, 0, 0, 0.2);
 }
 .dishes__item::after {
   position: absolute;
   z-index: 20;
-  bottom: 0;
-  left: 0;
+  bottom: 6px;
+  left: 7px;
   content: "";
   display: block;
   width: 0px;
   height: 0px;
-  border: 11.5px solid white;
-  border-bottom-color: transparent;
+  border: 17px solid white;
   border-left-color: transparent;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  transform: rotate(45deg);
+  box-shadow: 0 25px 40px -10px rgba(0, 0, 0, 0.4);
 }
 .dishes__item--hidden {
   display: none;
@@ -836,8 +843,9 @@ body {
   height: auto;
 }
 .dishes__description {
+  position: relative;
   padding: 40px 15px;
-  padding-top: 110px;
+  padding-top: 100px;
   background-color: white;
   background-image: url("../img/windmill.png");
   background-repeat: no-repeat;
@@ -880,18 +888,19 @@ body {
 .dishes__time {
   position: absolute;
   right: -10px;
-  bottom: -40px;
+  bottom: -80px;
   z-index: 20;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   background-color: white;
   background-image: url("../img/fields.jpg");
   background-size: contain;
   font-family: "Alegreya", serif;
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.3);
 }
 .dishes__time-text {
   color: #a47d5e;
@@ -931,12 +940,13 @@ body {
 .tabs__arrow {
   position: relative;
   font-size: 0;
-  width: 26px;
-  height: 26px;
+  width: 25px;
+  height: 25px;
   background-color: transparent;
   border: 2px solid #d9bca5;
   border-radius: 50%;
   outline: none;
+  box-sizing: border-box;
 }
 .tabs__arrow:hover {
   cursor: pointer;
@@ -952,25 +962,28 @@ body {
   top: 6px;
   content: "";
   display: block;
-  width: 7px;
-  height: 7px;
+  width: 5px;
+  height: 5px;
   border: 2px solid #d9bca5;
   transform: rotate(45deg);
 }
 .tabs__arrow--prev::after {
-  left: 7px;
+  left: 8px;
   border-top-color: transparent;
   border-right-color: transparent;
 }
 .tabs__arrow--next::after {
-  left: 3px;
+  left: 4px;
   border-bottom-color: transparent;
   border-left-color: transparent;
+}
+.tabs__arrow--disabled {
+  filter: grayscale(1);
 }
 .tabs__list {
   margin: 0;
   padding: 0;
-  width: 240px;
+  width: 210px;
   margin-left: auto;
   margin-right: auto;
   overflow-x: hidden;
@@ -981,6 +994,9 @@ body {
 }
 .tabs__item {
   padding: 0 10px;
+}
+.tabs__item--active .tabs__image {
+  filter: brightness(40%);
 }
 .tabs__image {
   width: 50px;

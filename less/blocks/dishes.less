@@ -1,6 +1,7 @@
 .dishes {
   padding-top: 60px;
   padding-bottom: 90px;
+  background-color: #dfe0d7;
   background-image: url("../img/bg_dishes.jpg");
   background-position: center 0;
   background-size: cover;
@@ -17,20 +18,29 @@
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
+  box-shadow: 0px -20px 40px -15px rgba(0,0,0,.2),
+  20px 10px 40px -10px rgba(0,0,0,.2),
+  -25px -10px 40px -15px rgba(0,0,0,.2),
+  10px 25px 40px -15px rgba(0,0,0,.2);
+  
 
   &::after {
     position: absolute;
     z-index: 20;
-    bottom: 0;
-    left: 0;
+    bottom: 6px;
+    left: 7px;
     content: "";
     display: block;
     width: 0px;
     height: 0px;
-    border: 11.5px solid white;
-    border-bottom-color: transparent;
+    border: 17px solid white;
     border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    transform: rotate(45deg);
+    box-shadow: 0 25px 40px -10px rgba(0,0,0,.4);
   }
+
 
   &--hidden {
     display: none;
@@ -43,8 +53,9 @@
 }
 
 .dishes__description {
+  position: relative;
   padding: 40px 15px;
-  padding-top: 110px;
+  padding-top: 100px;
   background-color: white;
   background-image: url("../img/windmill.png");
   background-repeat: no-repeat;
@@ -69,18 +80,19 @@
 .dishes__time {
   position: absolute;
   right: -10px;
-  bottom: -40px;
+  bottom: -80px;
   z-index: 20;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   background-color: white;
   background-image: url("../img/fields.jpg");
   background-size: contain;
   font-family: "Alegreya", serif;
+  box-shadow: 0px 0px 20px 5px fade(black, 30%);
 }
 
 .dishes__time-text {
