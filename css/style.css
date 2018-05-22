@@ -621,6 +621,7 @@ body {
 }
 .about {
   padding-top: 60px;
+  padding-bottom: 50px;
   background-color: #fcfbf8;
   background-image: url("../img/bg_texture.jpg");
   background-position: 0 0;
@@ -817,7 +818,7 @@ body {
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
-  box-shadow: 0px -20px 40px -15px rgba(0, 0, 0, 0.2), 20px 10px 40px -10px rgba(0, 0, 0, 0.2), -25px -10px 40px -15px rgba(0, 0, 0, 0.2), 10px 25px 40px -15px rgba(0, 0, 0, 0.2);
+  filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.3));
 }
 .dishes__item::after {
   position: absolute;
@@ -833,7 +834,6 @@ body {
   border-right-color: transparent;
   border-top-color: transparent;
   transform: rotate(45deg);
-  box-shadow: 0 25px 40px -10px rgba(0, 0, 0, 0.4);
 }
 .dishes__item--hidden {
   display: none;
@@ -905,16 +905,16 @@ body {
 .dishes__time-text {
   color: #a47d5e;
   text-transform: uppercase;
-  font-size: 14px;
-  line-height: 30px;
+  font-size: 12px;
+  line-height: 20px;
   font-weight: bold;
   letter-spacing: 0.1em;
 }
 .dishes__time-value {
   margin: 0;
   color: #dfc691;
-  font-size: 62px;
-  line-height: 50px;
+  font-size: 48px;
+  line-height: 35px;
   font-weight: bold;
   letter-spacing: 0.1em;
 }
@@ -922,7 +922,7 @@ body {
   color: #979285;
   text-transform: lowercase;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 25px;
   font-weight: bold;
   letter-spacing: 0.1em;
 }
