@@ -1,0 +1,116 @@
+.dishes {
+  padding-top: 60px;
+  padding-bottom: 90px;
+  background-image: url("../img/bg_dishes.jpg");
+  background-position: center 0;
+  background-size: cover;
+}
+
+.dishes__wrapper {
+  .container(280px);
+  position: relative;
+}
+
+.dishes__item {
+  position: relative;
+  z-index: 0;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+
+  &::after {
+    position: absolute;
+    z-index: 20;
+    bottom: 0;
+    left: 0;
+    content: "";
+    display: block;
+    width: 0px;
+    height: 0px;
+    border: 11.5px solid white;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+
+  &--hidden {
+    display: none;
+  }
+}
+
+.dishes__image {
+  width: 100%;
+  height: auto;
+}
+
+.dishes__description {
+  padding: 40px 15px;
+  padding-top: 110px;
+  background-color: white;
+  background-image: url("../img/windmill.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: bottom;
+}
+
+.dishes__title {
+  .style-title();
+  font-size: 36px;
+}
+
+.dishes__subtitle {
+  .style-subtitle();
+}
+
+.dishes__text {
+  .style-description();
+  margin-top: 20px;
+}
+
+.dishes__time {
+  position: absolute;
+  right: -10px;
+  bottom: -40px;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  background-color: white;
+  background-image: url("../img/fields.jpg");
+  background-size: contain;
+  font-family: "Alegreya", serif;
+}
+
+.dishes__time-text {
+  color: @brown;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+.dishes__time-value {
+  margin: 0;
+  color: #dfc691;
+  font-size: 62px;
+  line-height: 50px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+.dishes__time-unit {
+  color: #979285;
+  text-transform: lowercase;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+.dishes__tabs {
+  position: absolute;
+  top: 30px;
+}

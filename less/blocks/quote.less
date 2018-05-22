@@ -41,8 +41,8 @@
   font-style: normal;
   letter-spacing: 0.025em;
 
-  &:after,
-  &:before {
+  &::after,
+  &::before {
     content: "";
     display: block;
     position: absolute;
@@ -51,11 +51,11 @@
     background-color: #d7d5ca;
   }
 
-  &:after {
+  &::after {
     bottom: 0;
   }
 
-  &:before {
+  &::before {
     top: 0;
   }
 }
@@ -73,7 +73,7 @@
   line-height: 30px;
   letter-spacing: 0.025em;
 
-  &:after, &:before {
+  &::after, &::before {
     position: absolute;
     display: block;
     height: 15px;
@@ -83,13 +83,13 @@
     font-family: "Times New Roman", sans-serif;
     letter-spacing: 0.025em;
   }
-  &:before {
+  &::before {
     content: "\201c";
     top: 0;
     left: 0;
   }
 
-  &:after {
+  &::after {
     content: "\201f";
     bottom: 0;
     right: 0;
