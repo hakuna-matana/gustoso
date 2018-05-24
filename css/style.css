@@ -1392,6 +1392,7 @@ body {
   max-width: 320px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 10px;
   padding-bottom: 50px;
   background-color: #f3f1e9;
 }
@@ -1402,7 +1403,7 @@ body {
 }
 .page-footer__logo {
   padding: 0;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1417,8 +1418,13 @@ body {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+  border-bottom: 1px solid #c2beba;
+  border-top: 1px solid #c2beba;
 }
 .footer-nav__link {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
   color: #56534c;
   font-family: "Alegreya", serif;
   font-size: 14px;
