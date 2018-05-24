@@ -1,0 +1,155 @@
+.best {
+  padding-top: 60px;
+  padding-bottom: 80px;
+  background-color: #f3f1e9;
+  background-image: url("../img/landscape.png");
+  background-repeat: no-repeat;
+  background-position: center 0;
+}
+
+.best__wrapper {
+  .container(280px);
+}
+
+.best__title {
+  .style-title();
+  font-size: 30px;
+  line-height: 34px;
+}
+
+.best__subtitle {
+  .style-subtitle();
+  margin-bottom: 40px;
+}
+
+.best__list {
+  list-style: none;
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
+}
+
+.best__item {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.best__item-icon {
+  filter: drop-shadow(0 10px 5px rgba(0,0,0,0.1));
+}
+
+.best__item-title {
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: @brown;
+  text-align: center;
+  font-family: "Alegreya", serif;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0.025em;
+  font-weight: bold;
+}
+
+.best__item-text {
+  margin: 0;
+  color: @gray;
+  text-align: center;
+  font-family: "ProximaNova", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+}
+
+.best__picture {
+  position: relative;
+}
+
+.best__image-contain {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 313px;
+  background-color: #fff;
+}
+
+.best__link {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  padding-left: 27px;
+  padding-right: 27px;
+  background-color: #fff;
+  color: #dfc691;
+  letter-spacing: 0.05em;
+  border: 1px dashed #dfc691;
+}
+
+.best__time-list {
+  position: absolute;
+  bottom: -20px;
+  left: -10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+}
+
+.best__time-item {
+  width: 100px;
+  height: 100px;
+  background-color: fade(white, 75%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Alegreya", serif;
+
+  &:first-child {
+    margin-right: 1px;
+  }
+
+  &--main {
+    display: flex;
+  }
+}
+
+.best__time-text {
+  color: @brown;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+.best__time-value {
+  margin: 0;
+  color: #56534c;
+  font-size: 35px;
+  line-height: 35px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+.best__time-unit {
+  color: #979285;
+  text-transform: lowercase;
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+.best__time-item--main {
+  background-color: #fff;
+  background-image: url("../img/fields.jpg");
+  background-size: contain;
+  .best__time-value {
+    font-size: 48px;
+    color: #dfc691;
+  }
+}
