@@ -1,10 +1,22 @@
 .breakfast {
+  position: relative;
   padding-top: 60px;
   padding-bottom: 70px;
   background-color: #4a4e5f;
   background-image: url("../img/bg_breakfast.jpg");
   background-position: 23% 0;
   background-size: cover;
+  &::after {
+    position: absolute;
+    right: 0;
+    bottom: 15px;
+    display: block;
+    width: 150px;
+    height: 146px;
+    content: "";
+    background-image: url("../img/spikes.png");
+    background-size: cover;
+  }
 }
 
 .breakfast__menu {
