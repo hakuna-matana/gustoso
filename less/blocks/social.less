@@ -14,3 +14,51 @@
   color: white;
   text-decoration: none;
 }
+
+@media (min-width: @tablet-width) {
+
+}
+
+@media (min-width: @desktop-small-width) {
+  .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .social__list {
+    font-size: 0;
+  }
+
+  .social__link {
+    display: block;
+    width: 16px;
+    height: 16px;
+    margin: 0 7px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    &--twitter {
+      background-image: url("../img/icon_tw.png");
+    }
+    &--facebook {
+      background-image: url("../img/icon_fb.png");
+    }
+    &--instagram {
+      background-image: url("../img/icon_insta.png");
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .social__link {
+    margin: 0 10px;
+  }
+}
+
+@media (min-width: @max-width) {
+  .social__link {
+    margin: 0 14px;
+  }
+}

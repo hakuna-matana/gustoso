@@ -49,3 +49,50 @@
   border: 1px dashed #9e9c93;
 }
 
+@media (min-width: @tablet-width) {
+  .greeting__title {
+    font-size: 36px;
+    &::after {
+      margin-top: 30px;
+      margin-bottom: 30px;
+
+    }
+  }
+
+  .greeting__description {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: @desktop-small-width) {
+  .greeting__title {
+    font-size: 60px; 
+
+    &::after {
+      margin-top: 45px;
+      margin-bottom: 45px;
+      width: 190px;
+    }
+  }
+
+  .greeting__description {
+    width: 566px;
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  
+}
+
+@media (min-width: @max-width) {
+  .greeting__title {
+    font-size: 92px;
+  }
+
+  .greeting__description {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}

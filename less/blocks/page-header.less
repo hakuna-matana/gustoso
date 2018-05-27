@@ -1,36 +1,19 @@
 .page-header {
-  .container();
+  min-width: 320px;
   position: relative;
   height: 100%;
   background-color: #979995;
-  background-image: url("../img/bg_header.jpg");
+  background-image: url("../img/bg_header_2.jpg");
   background-position: center 0;
   background-size: cover;
-  // border-bottom: 10px solid white;
-  // &::after, &::before {
-  //   content: "";
-  //   display: block;
-  //   position: absolute;
-  //   bottom: 0;
-  //   left: 50%;
-  //   transform: translate(-50%, 50%);
-  // }
-
-  // &::before {
-  //   width: 80px;
-  //   height: 80px;
-  //   border-radius: 50%;
-  //   background-color: white;
-  // }
-
-  // &::after {
-  //   width: 106px;
-  //   height: 106px;
-  //   background-image: url("../img/icon_bun.png");
-  // }
 }
 
 .page-header__wrapper {
+  margin-left: 40px;
+  height: 100%;
+}
+
+.page-header__greeting {
   .container(280px);
   height: 100%;
 }
@@ -38,4 +21,65 @@
 .page-header__top {
   min-height: 70px;
   background-color: fade(@gray, 70%);
+}
+
+@media (min-width: @tablet-width) {
+
+  .page-header__wrapper {
+    .container(640px);
+  }
+
+  .page-header__greeting {
+    .container(640px);
+  }
+}
+
+@media (min-width: @desktop-small-width) {
+  .page-header {
+    border-bottom: 10px solid white;
+    &::after, &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      z-index: 0;
+    }
+  
+    &::before {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: white;
+    }
+  
+    &::after {
+      width: 106px;
+      height: 106px;
+      background-image: url("../img/icon_bun.png");
+    }
+  }
+
+  .page-header__wrapper {
+    .container(800px);
+    display: flex;
+    flex-direction: row;
+  }
+
+  .page-header__greeting {
+    .container(800px);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__wrapper {
+    .container(1000px);
+  }
+}
+
+@media (min-width: @max-width) {
+  .page-header__wrapper {
+    .container(1260px);
+  }
 }
