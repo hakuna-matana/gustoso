@@ -27,7 +27,6 @@
 }
 
 .quote__author-name {
-  // width: 111px;
   position: relative;
   width: 80px;
   padding-top: 15px;
@@ -94,5 +93,26 @@
     bottom: 0;
     right: 0;
     transform: rotate(180deg);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .quote {
+    .container(380px);
+  }
+
+  .quote__author-name {
+    width: 115px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .quote__title {
+    margin-top: 35px;
+    margin-bottom: 40px;
+  }
+
+  .quote__author {
+    margin-bottom: 17px;
   }
 }
