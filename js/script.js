@@ -29,3 +29,28 @@ button.onclick = function(event) {
     document.body.classList.remove('no-scroll');
   };
 }
+
+//stars
+
+var stars = document.body.querySelectorAll('.dishes__stars');
+
+for(var i = 0; i < stars.length; i++) {
+  var value = +stars[i].innerHTML;
+  stars[i].innerHTML = '';
+  setStar(value, stars[i]);
+}
+
+function setStar(count, parent) {
+  for(var i = 0; i < count; i++) {
+    var star = document.createElement('i');
+    star.classList.add('dishes__icon-star');
+    parent.appendChild(star);
+  }
+  if (count < 5) {
+    for (var i = count; i < 5; i++) {
+      var star = document.createElement('i');
+    star.classList.add('dishes__icon-star-outline');
+    parent.appendChild(star);
+    } 
+  }
+}

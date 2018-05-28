@@ -1386,6 +1386,29 @@ body {
     bottom: 40px;
     right: 0;
   }
+  .dishes__stars {
+    position: absolute;
+    top: 180px;
+    left: 30px;
+  }
+  .dishes__icon-star {
+    display: block;
+    width: 21px;
+    height: 20px;
+    margin-bottom: 9px;
+    background-image: url("../img/icon_star.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .dishes__icon-star-outline {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 9px;
+    background-image: url("../img/icon_star-outline.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
 }
 @media (min-width: 1260px) {
   .dishes {
