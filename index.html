@@ -100,7 +100,11 @@
     <h2 class="dishes__title visually-hidden">Our dishes</h2>
     <div class="dishes__wrapper">
       <section class="dishes__item  ">
-        <img class="dishes__image" src="img/menu.png" width="585" height="512" alt="">
+        <picture>
+          <source media="(min-width: 1260px)" srcset = "img/menu-desktop.png">
+          <source media="(min-width: 960px)" srcset = "img/menu-desktop-small.png">
+          <img class="dishes__image" src="img/menu.png" width="585" height="512" alt="">
+        </picture>
         <div class="dishes__description">
           <h3 class="dishes__title">Tasty pancakes</h3>
           <b class="dishes__subtitle">season favourite</b>
@@ -165,6 +169,12 @@
           </li>
           <li class="tabs__item">
             <img class="tabs__image" src="img/slider_3.png" alt="" width="90" height="90">
+          </li>
+          <li class="tabs__item">
+            <img class="tabs__image" src="img/slider.png" alt="" width="90" height="90">
+          </li>
+          <li class="tabs__item">
+            <img class="tabs__image" src="img/slider_2.png" alt="" width="90" height="90">
           </li>
         </ul>
         <button class="tabs__arrow tabs__arrow--next" type="button">next</button>
