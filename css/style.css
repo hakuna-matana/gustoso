@@ -990,6 +990,10 @@ body {
     flex-direction: row;
     align-items: flex-start;
   }
+  .about__title {
+    font-size: 48px;
+    line-height: 30px;
+  }
   .about__item:nth-child(-n + 2) {
     display: block;
   }
@@ -1008,10 +1012,6 @@ body {
     max-width: 490px;
     margin-left: auto;
     margin-right: auto;
-  }
-  .about__title {
-    font-size: 48px;
-    line-height: 30px;
   }
   .about__subtitle {
     font-size: 14px;
@@ -1982,14 +1982,14 @@ body {
     width: 400px;
     height: 550px;
     z-index: 5;
-    filter: brightness(65%);
+    filter: brightness(85%);
   }
   .book__wrapper--3 {
     width: 370px;
     height: 500px;
     right: -24px;
     z-index: 0;
-    filter: brightness(50%);
+    filter: brightness(70%);
   }
   .book__page {
     max-width: 310px;
@@ -2105,6 +2105,7 @@ body {
   position: relative;
 }
 .best__image-contain {
+  margin: 0 auto;
   position: relative;
   display: flex;
   justify-content: center;
@@ -2181,6 +2182,189 @@ body {
 .best__time-item--main .best__time-value {
   font-size: 48px;
   color: #dfc691;
+}
+@media (min-width: 768px) {
+  .best__wrapper {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .best__title {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .best__image-contain {
+    width: 400px;
+    height: 322px;
+  }
+  .best__image {
+    width: 380px;
+    height: 301px;
+  }
+  .best__link {
+    top: -20px;
+  }
+  .best__time-list {
+    bottom: -40px;
+  }
+  .best__time-item {
+    width: 140px;
+    height: 140px;
+  }
+  .best__time-text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .best__time-value {
+    font-size: 44px;
+    line-height: 50px;
+  }
+  .best__time-unit {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .best__time-item--main .best__time-value {
+    font-size: 52px;
+    line-height: 50px;
+  }
+}
+@media (min-width: 960px) {
+  .best__wrapper {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .best__content-wrapper {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .best__list {
+    max-width: 280px;
+    margin-bottom: 0;
+  }
+  .best__item:last-child {
+    padding-bottom: 0;
+  }
+  .best__image-contain,
+  .best__image {
+    width: 450px;
+    height: 350px;
+  }
+  .best__time-list {
+    flex-direction: column;
+    left: auto;
+    right: 5px;
+    bottom: -35px;
+  }
+  .best__time-item:first-child {
+    margin-right: 0;
+    margin-bottom: 1px;
+  }
+  .best__link {
+    top: auto;
+    bottom: -15px;
+    left: -20px;
+  }
+}
+@media (min-width: 1260px) {
+  .best {
+    padding-top: 70px;
+  }
+  .best__wrapper {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .best__content-wrapper {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .best__title {
+    font-size: 48px;
+    line-height: 30px;
+  }
+  .best__subtitle {
+    font-size: 14px;
+    line-height: 30px;
+  }
+  .best__list {
+    max-width: 300px;
+  }
+  .best__item-title {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .best__image-contain,
+  .best__image {
+    width: 600px;
+    height: 400px;
+  }
+  .best__link {
+    font-size: 18px;
+    bottom: -20px;
+  }
+  .best__time-item {
+    width: 155px;
+    height: 155px;
+  }
+}
+@media (min-width: 1360px) {
+  .best {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+  .best__wrapper {
+    max-width: 1260px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .best__content-wrapper {
+    max-width: 1260px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .best__image-contain,
+  .best__image {
+    width: 840px;
+    height: 556px;
+  }
+  .best__item {
+    padding-bottom: 50px;
+  }
+  .best__item:last-child {
+    padding-bottom: 0;
+  }
+  .best__time-list {
+    bottom: -20px;
+  }
+  .best__time-item {
+    width: 200px;
+    height: 200px;
+  }
+  .best__time-text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .best__time-value {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .best__time-unit {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .best__time-item--main .best__time-value {
+    font-size: 92px;
+    line-height: 92px;
+  }
 }
 .page-footer {
   max-width: 320px;

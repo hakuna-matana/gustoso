@@ -253,47 +253,53 @@
         <h2 class="best__title">The Jibarito sandwich</h2>
         <b class="best__subtitle">the best sandwich you’ve ever tasted!</b>
       </div>
-      <div class="best__ingredients">
-        <ul class="best__list">
-          <li class="best__item">
-            <img class="best__item-icon" src="img/ingredients_1.png" width="100" height="100" alt="">
-            <h3 class="best__item-title">Class aptent</h3>
-            <p class="best__item-text">Quot alienum persecuti ut eam, nam ad atqui primis nusquam.</p>
-          </li>
-          <li class="best__item">
-            <img class="best__item-icon" src="img/ingredients_2.png" width="100" height="100" alt="">
-            <h3 class="best__item-title">Nulla eget</h3>
-            <p class="best__item-text">Nullam dictum felis eu pede mollis pretium Integer tincidunt.</p>
-          </li>
-          <li class="best__item">
-            <img class="best__item-icon" src="img/ingredients_3.png" width="100" height="100" alt="">
-            <h3 class="best__item-title">Sed nibh purus</h3>
-            <p class="best__item-text"> Aenean eleifend tellus leo ligula, porttitor eu, consequat vitae.</p>
-          </li>
-        </ul>
-      </div>
-      <div class="best__picture">
-        <div class="best__image-contain">
-          <img class="best__image" src="img/recipe_sandwich_mobile.jpg" width="260" height="293" alt="">
-          <a class="best__link button" href="#">full recipe</a>
+      <div class="best__content-wrapper">
+        <div class="best__ingredients">
+          <ul class="best__list">
+            <li class="best__item">
+              <img class="best__item-icon" src="img/ingredients_1.png" width="100" height="100" alt="">
+              <h3 class="best__item-title">Class aptent</h3>
+              <p class="best__item-text">Quot alienum persecuti ut eam, nam ad atqui primis nusquam.</p>
+            </li>
+            <li class="best__item">
+              <img class="best__item-icon" src="img/ingredients_2.png" width="100" height="100" alt="">
+              <h3 class="best__item-title">Nulla eget</h3>
+              <p class="best__item-text">Nullam dictum felis eu pede mollis pretium Integer tincidunt.</p>
+            </li>
+            <li class="best__item">
+              <img class="best__item-icon" src="img/ingredients_3.png" width="100" height="100" alt="">
+              <h3 class="best__item-title">Sed nibh purus</h3>
+              <p class="best__item-text"> Aenean eleifend tellus leo ligula, porttitor eu, consequat vitae.</p>
+            </li>
+          </ul>
         </div>
-        <ul class="best__time-list">
-          <li class="best__time-item">
-            <b class="best__time-text">prep</b>
-            <p class="best__time-value">15</p>
-            <span class="best__time-unit">mins</span>
-          </li>
-          <li class="best__time-item">
-            <b class="best__time-text">cook</b>
-            <p class="best__time-value">35</p>
-            <span class="best__time-unit">mins</span>
-          </li>
-          <li class="best__time-item  best__time-item--main">
-            <b class="best__time-text">ready in</b>
-            <p class="best__time-value">50</p>
-            <span class="best__time-unit">mins</span>
-          </li>
-        </ul>
+        <div class="best__picture">
+          <div class="best__image-contain">
+            <picture>
+              <source media="(min-width: 960px)" srcset = "img/recipe_sandwich.jpg">
+              <source media="(min-width: 768px)" srcset = "img/recipe_sandwich_tablet.jpg">
+              <img class="best__image" src="img/recipe_sandwich_mobile.jpg" width="260" height="293" alt="">
+            </picture>
+            <a class="best__link button" href="#">full recipe</a>
+            <ul class="best__time-list">
+                <li class="best__time-item">
+                  <b class="best__time-text">prep</b>
+                  <p class="best__time-value">15</p>
+                  <span class="best__time-unit">mins</span>
+                </li>
+                <li class="best__time-item">
+                  <b class="best__time-text">cook</b>
+                  <p class="best__time-value">35</p>
+                  <span class="best__time-unit">mins</span>
+                </li>
+                <li class="best__time-item  best__time-item--main">
+                  <b class="best__time-text">ready in</b>
+                  <p class="best__time-value">50</p>
+                  <span class="best__time-unit">mins</span>
+                </li>
+              </ul>
+          </div>
+        </div>
       </div>
     </div>
   </section>
