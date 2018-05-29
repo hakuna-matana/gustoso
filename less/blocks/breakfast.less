@@ -16,7 +16,12 @@
     content: "";
     background-image: url("../img/spikes.png");
     background-size: cover;
+    z-index: 10;
   }
+}
+
+.breakfast__wrapper {
+  .container(280px);
 }
 
 .breakfast__menu {
@@ -29,7 +34,7 @@
 
 .breakfast__subtitle {
   .style-subtitle(#c8a593);
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .breakfast__list {
@@ -42,9 +47,9 @@
 .breakfast__item {
   text-align: center;
   padding-bottom: 50px;
-
- 
 }
+
+
 
 .breakfast__item:not(:last-child) {
   position: relative;
@@ -91,4 +96,99 @@
   font-size: 36px;
   line-height: 30px;
   letter-spacing: 0.05em;
+}
+
+@media (min-width: @tablet-width) {
+  .breakfast__wrapper {
+    .container(640px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+
+  .breakfast__item:last-child {
+    padding-bottom: 0;
+  }
+
+  .breakfast__menu {
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-small-width) {
+  .breakfast {
+    &::after {
+      bottom: 15px;
+      width: 200px;
+      height: 146px;
+    }
+  }
+  .breakfast__wrapper {
+    .container(800px); 
+  }
+
+  .breakfast__menu {
+    max-width: 320px;
+    margin-left: 34px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .breakfast {
+    &::after {
+      bottom: 15px;
+      width: 300px;
+      height: 180px;
+    }
+  }
+
+  .breakfast__wrapper {
+    .container(970px); 
+  }
+
+  .breakfast__menu {
+    width: 540px;
+    max-width: 540px;
+    // margin: 0 auto;
+  }
+  
+  .breakfast__title {
+    font-size: 54px;
+  }
+
+  .breakfast__subtitle {
+    font-size: 16px;
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: @max-width) {
+  .breakfast {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    &::after {
+      bottom: 0;
+      width: 300px;
+      height: 200px;
+    }
+  }
+
+  .breakfast__wrapper {
+    .container(1200px); 
+  }
+
+  .breakfast__menu {
+    margin-left: 34px;
+  }
+
+  .breakfast__title {
+    font-size: 60px;
+  }
+
+  .breakfast__subtitle {
+    font-size: 18px;
+  }
+
 }
