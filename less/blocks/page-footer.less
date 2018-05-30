@@ -1,5 +1,4 @@
 .page-footer {
-  .container();
   padding-top: 10px;
   padding-bottom: 50px;
   background-color: #f3f1e9;
@@ -17,4 +16,36 @@
   align-items: center;
   text-align: center;
   min-height: 50px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__wrapper {
+    .container(400px);
+  }
+
+  .page-footer__logo {
+    min-height: 60px;
+  }
+}
+
+@media (min-width: @desktop-small-width) {
+  .page-footer__wrapper {
+    .container(800px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__wrapper {
+    .container(1000px);
+  }
+}
+
+@media (min-width: @max-width) {
+  .page-footer__wrapper {
+    .container(1260px);
+  }
 }

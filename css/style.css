@@ -692,7 +692,7 @@ body {
   }
   .navigation__item:not(:first-child)::before {
     position: absolute;
-    top: center;
+    top: 0;
     left: 0;
     transform: translateX(-50%);
     display: block;
@@ -2184,6 +2184,9 @@ body {
   color: #dfc691;
 }
 @media (min-width: 768px) {
+  .best {
+    padding-bottom: 100px;
+  }
   .best__wrapper {
     max-width: 400px;
     margin-left: auto;
@@ -2229,6 +2232,9 @@ body {
   }
 }
 @media (min-width: 960px) {
+  .best {
+    padding-bottom: 80px;
+  }
   .best__wrapper {
     max-width: 800px;
     margin-left: auto;
@@ -2367,9 +2373,6 @@ body {
   }
 }
 .page-footer {
-  max-width: 320px;
-  margin-left: auto;
-  margin-right: auto;
   padding-top: 10px;
   padding-bottom: 50px;
   background-color: #f3f1e9;
@@ -2387,6 +2390,41 @@ body {
   align-items: center;
   text-align: center;
   min-height: 50px;
+}
+@media (min-width: 768px) {
+  .page-footer__wrapper {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .page-footer__logo {
+    min-height: 60px;
+  }
+}
+@media (min-width: 960px) {
+  .page-footer__wrapper {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+}
+@media (min-width: 1260px) {
+  .page-footer__wrapper {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 1360px) {
+  .page-footer__wrapper {
+    max-width: 1260px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .footer-nav__list {
   list-style: none;
@@ -2411,4 +2449,50 @@ body {
   font-weight: normal;
   text-transform: uppercase;
   text-decoration: none;
+}
+@media (min-width: 768px) {
+  .footer-nav__link {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    letter-spacing: 0.3em;
+  }
+}
+@media (min-width: 960px) {
+  .footer-nav__link {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 12px;
+    padding-right: 12px;
+    letter-spacing: 0.1em;
+  }
+}
+@media (min-width: 1260px) {
+  .footer-nav__item {
+    position: relative;
+  }
+  .footer-nav__item:not(:first-child)::before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+    display: block;
+    content: "~";
+    color: #56534c;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .footer-nav__link {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    letter-spacing: 0.1em;
+  }
+}
+@media (min-width: 1360px) {
+  .footer-nav__link {
+    padding-left: 45px;
+    padding-right: 45px;
+    letter-spacing: 0.2em;
+  }
 }
