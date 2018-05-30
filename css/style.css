@@ -1318,6 +1318,7 @@ body {
     height: 50px;
   }
   .dishes__description {
+    max-width: 420px;
     height: 512px;
     box-sizing: border-box;
     text-align: left;
@@ -1369,6 +1370,7 @@ body {
   .dishes__text {
     text-align: left;
     margin-top: 40px;
+    align-items: center;
   }
   .dishes__time {
     right: -75px;
@@ -1427,6 +1429,7 @@ body {
     width: 420px;
   }
   .dishes__description {
+    max-width: 550px;
     padding-left: 63px;
     padding-right: 63px;
     padding-bottom: 160px;
@@ -1943,6 +1946,20 @@ body {
     margin-right: auto;
   }
 }
+@media (min-width: 960px) {
+  .book__title {
+    max-width: 298px;
+  }
+  .book__description {
+    max-width: 298px;
+  }
+  .book__page--2 .book__description,
+  .book__page--3 .book__description,
+  .book__page--2 .book__title,
+  .book__page--3 .book__title {
+    font-size: 0;
+  }
+}
 @media (min-width: 1260px) {
   .book {
     max-width: 380px;
@@ -2001,9 +2018,19 @@ body {
     margin-bottom: 30px;
     font-size: 40px;
     line-height: 40px;
+    max-width: 330px;
+  }
+  .book__description {
+    max-width: 330px;
   }
   .book__date {
     width: 230px;
+  }
+  .book__page--2 .book__description,
+  .book__page--3 .book__description,
+  .book__page--2 .book__title,
+  .book__page--3 .book__title {
+    font-size: 0;
   }
 }
 @media (min-width: 1360px) {
@@ -2027,6 +2054,16 @@ body {
   .book__title {
     font-size: 44px;
     line-height: 60px;
+    max-width: 370px;
+  }
+  .book__description {
+    max-width: 370px;
+  }
+  .book__page--2 .book__description,
+  .book__page--3 .book__description,
+  .book__page--2 .book__title,
+  .book__page--3 .book__title {
+    font-size: 0;
   }
 }
 .best {
