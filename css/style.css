@@ -1928,6 +1928,12 @@ body {
   line-height: 30px;
   z-index: 35;
 }
+.book__title {
+  max-width: 258px;
+}
+.book__description {
+  max-width: 258px;
+}
 @media (min-width: 768px) {
   .book {
     max-width: 320px;
