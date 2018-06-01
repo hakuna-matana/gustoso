@@ -8,6 +8,7 @@ if (!button.classList.contains('navigation__toggle--closed')) {
 
   list.classList.add('navigation__list--closed');
   nav.classList.remove('navigation--opened');
+  nav.classList.remove('navigation--nojs');
 }
 
 button.onclick = function(event) {

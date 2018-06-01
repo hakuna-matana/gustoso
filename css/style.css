@@ -601,6 +601,12 @@ body {
 .navigation__toggle:hover {
   cursor: pointer;
 }
+.navigation--nojs {
+  background-color: #56534c;
+}
+.navigation--nojs .navigation__toggle {
+  display: none;
+}
 .navigation__list {
   position: absolute;
   left: 0;
@@ -2393,6 +2399,7 @@ body {
   }
   .best__time-list {
     bottom: -20px;
+    right: 10px;
   }
   .best__time-item {
     width: 200px;
