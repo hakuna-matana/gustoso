@@ -16,6 +16,7 @@
   border-radius: 50%;
   outline: none;
   box-sizing: border-box;
+  transition: all 0.3s;
 
   &:hover {
     cursor: pointer;
@@ -44,16 +45,21 @@
     left: 8px;
     border-top-color: transparent;
     border-right-color: transparent;
+    transition: all 0.3s;
   }
 
   &--next::after {
     left: 4px;
     border-bottom-color: transparent;
     border-left-color: transparent;
+    transition: all 0.3s;
   }
 
   &--disabled {
     filter: grayscale(1);
+    &:hover, &:active {
+      cursor: default;
+    }
   }
 }
 
@@ -73,8 +79,8 @@
 .tabs__item {
   padding: 0 10px;
 
-  &--active .tabs__image  {
-    filter: brightness(40%);
+  &--active  {
+    filter: brightness(30%) contrast(70%);
   }
 }
 
@@ -115,6 +121,45 @@
   .tabs__list {
     width: 270px;
   }
+
+   
+  .tabs__item:not(.tabs__item--active):hover {
+    cursor: pointer;
+    filter: brightness(70%);
+    transition: all 0.3s;
+  }
+
+  .tabs__item:not(.tabs__item--active):active {
+    cursor: pointer;
+    filter: brightness(50%);
+    transition: all 0.3s;
+  }
+
+  .tabs__arrow:not(.tabs__arrow--disabled):hover {
+    border: 2px solid #d9bca5;
+    background-color: #d9bca5;
+    transition: all 0.3s;
+  }
+  .tabs__arrow--prev:not(.tabs__arrow--disabled):hover::after {
+    border: 2px solid #fff;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    transition: all 0.3s;
+  }
+
+  .tabs__arrow--next:not(.tabs__arrow--disabled):hover::after {
+    border: 2px solid #fff;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    transition: all 0.3s;
+  }
+  
+
+  .tabs__arrow:not(.tabs__arrow--disabled):active {
+    filter: brightness(80%) contrast(130%);
+    transition: all 0.3s;
+  }
+
 }
 
 @media (min-width:  @desktop-width) {

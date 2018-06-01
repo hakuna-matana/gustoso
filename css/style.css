@@ -681,11 +681,34 @@ body {
   .navigation__list--closed {
     display: flex;
   }
-  .navigation__link {
+  .navigation__item {
     padding: 0 15px;
+  }
+  .navigation__link {
+    position: relative;
+    padding: 0;
     font-size: 12px;
     line-height: 24px;
     letter-spacing: 0.2em;
+  }
+  .navigation__link::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: -3px;
+    background-color: transparent;
+    transition: all 0.3s;
+  }
+  .navigation__link:hover::after,
+  .navigation__link:active::after {
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: all 0.8s;
+  }
+  .navigation__link:active {
+    filter: brightness(75%);
+    transition: all 0.3s;
   }
 }
 @media (min-width: 1260px) {
@@ -694,14 +717,9 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
-  .navigation__link {
-    padding: 0 25px;
-    font-size: 13px;
-    line-height: 24px;
-    letter-spacing: 0.3em;
-  }
   .navigation__item {
     position: relative;
+    padding: 0 25px;
   }
   .navigation__item:not(:first-child)::before {
     position: absolute;
@@ -714,10 +732,17 @@ body {
     font-size: 14px;
     line-height: 24px;
   }
+  .navigation__link {
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: 0.3em;
+  }
 }
 @media (min-width: 1360px) {
-  .navigation__link {
+  .navigation__item {
     padding: 0 35px;
+  }
+  .navigation__link {
     font-size: 14px;
   }
 }
@@ -767,6 +792,19 @@ body {
 @media (min-width: 1260px) {
   .social__link {
     padding: 0 10px;
+  }
+}
+@media (min-width: 960px) {
+  .social__link {
+    transition: all 0.3s;
+  }
+  .social__link:hover {
+    filter: brightness(80%);
+    transition: all 0.3s;
+  }
+  .social__link:active {
+    filter: brightness(65%);
+    transition: all 0.3s;
   }
 }
 @media (min-width: 1360px) {
@@ -845,6 +883,17 @@ body {
   .greeting__description {
     width: 566px;
     margin-bottom: 60px;
+  }
+  .greeting__link {
+    transition: all 0.3s;
+  }
+  .greeting__link:hover {
+    background-color: rgba(57, 55, 51, 0.6);
+    transition: all 0.3s;
+  }
+  .greeting__link:active {
+    background-color: rgba(57, 55, 51, 0.75);
+    transition: all 0.3s;
   }
 }
 @media (min-width: 1360px) {
@@ -1489,6 +1538,7 @@ body {
   border-radius: 50%;
   outline: none;
   box-sizing: border-box;
+  transition: all 0.3s;
 }
 .tabs__arrow:hover {
   cursor: pointer;
@@ -1513,14 +1563,20 @@ body {
   left: 8px;
   border-top-color: transparent;
   border-right-color: transparent;
+  transition: all 0.3s;
 }
 .tabs__arrow--next::after {
   left: 4px;
   border-bottom-color: transparent;
   border-left-color: transparent;
+  transition: all 0.3s;
 }
 .tabs__arrow--disabled {
   filter: grayscale(1);
+}
+.tabs__arrow--disabled:hover,
+.tabs__arrow--disabled:active {
+  cursor: default;
 }
 .tabs__list {
   margin: 0;
@@ -1537,8 +1593,8 @@ body {
 .tabs__item {
   padding: 0 10px;
 }
-.tabs__item--active .tabs__image {
-  filter: brightness(40%);
+.tabs__item--active {
+  filter: brightness(30%) contrast(70%);
 }
 .tabs__image {
   width: 50px;
@@ -1568,6 +1624,37 @@ body {
   }
   .tabs__list {
     width: 270px;
+  }
+  .tabs__item:not(.tabs__item--active):hover {
+    cursor: pointer;
+    filter: brightness(70%);
+    transition: all 0.3s;
+  }
+  .tabs__item:not(.tabs__item--active):active {
+    cursor: pointer;
+    filter: brightness(50%);
+    transition: all 0.3s;
+  }
+  .tabs__arrow:not(.tabs__arrow--disabled):hover {
+    border: 2px solid #d9bca5;
+    background-color: #d9bca5;
+    transition: all 0.3s;
+  }
+  .tabs__arrow--prev:not(.tabs__arrow--disabled):hover::after {
+    border: 2px solid #fff;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    transition: all 0.3s;
+  }
+  .tabs__arrow--next:not(.tabs__arrow--disabled):hover::after {
+    border: 2px solid #fff;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    transition: all 0.3s;
+  }
+  .tabs__arrow:not(.tabs__arrow--disabled):active {
+    filter: brightness(80%) contrast(130%);
+    transition: all 0.3s;
   }
 }
 @media (min-width: 1260px) {
@@ -1978,6 +2065,17 @@ body {
   .book__page--3 .book__title {
     font-size: 0;
   }
+  .book__link {
+    transition: all 0.3s;
+  }
+  .book__link:hover {
+    background-color: #ebe8df;
+    transition: all 0.3s;
+  }
+  .book__link:active {
+    filter: brightness(95%);
+    transition: all 0.3s;
+  }
 }
 @media (min-width: 1260px) {
   .book {
@@ -2333,6 +2431,14 @@ body {
     bottom: -15px;
     left: -20px;
   }
+  .best__link:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: all 0.3s;
+  }
+  .best__link:active {
+    opacity: 0.8;
+    transition: all 0.3s;
+  }
 }
 @media (min-width: 1260px) {
   .best {
@@ -2519,17 +2625,44 @@ body {
   }
 }
 @media (min-width: 960px) {
-  .footer-nav__link {
-    padding-top: 15px;
-    padding-bottom: 15px;
+  .footer-nav__item {
     padding-left: 12px;
     padding-right: 12px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .footer-nav__link {
+    position: relative;
+    padding: 0;
     letter-spacing: 0.1em;
+  }
+  .footer-nav__link::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: -3px;
+    background-color: transparent;
+    transition: all 0.3s;
+  }
+  .footer-nav__link:hover::after,
+  .footer-nav__link:active::after {
+    background-color: rgba(86, 83, 76, 0.7);
+    transition: all 0.8s;
+  }
+  .footer-nav__link:active {
+    opacity: 0.7;
+    transition: all 0.3s;
   }
 }
 @media (min-width: 1260px) {
   .footer-nav__item {
     position: relative;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   .footer-nav__item:not(:first-child)::before {
     position: absolute;
@@ -2543,17 +2676,15 @@ body {
     line-height: 24px;
   }
   .footer-nav__link {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 25px;
-    padding-right: 25px;
     letter-spacing: 0.1em;
   }
 }
 @media (min-width: 1360px) {
-  .footer-nav__link {
+  .footer-nav__item {
     padding-left: 45px;
     padding-right: 45px;
+  }
+  .footer-nav__link {
     letter-spacing: 0.2em;
   }
 }
