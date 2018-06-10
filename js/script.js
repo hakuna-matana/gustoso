@@ -55,3 +55,14 @@ function setStar(count, parent) {
     } 
   }
 }
+
+//links
+
+var links = document.getElementsByTagName('a');
+
+for(var i = 0; i < links.length; i++) {
+  var link = links[i];
+  link.onclick = function(event) {
+    event.preventDefault();
+  }
+}
