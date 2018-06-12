@@ -1578,13 +1578,15 @@ body {
 .tabs__arrow--disabled:active {
   cursor: default;
 }
+.tabs__wrapper {
+  width: 210px;
+  overflow-x: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
 .tabs__list {
   margin: 0;
   padding: 0;
-  width: 210px;
-  margin-left: auto;
-  margin-right: auto;
-  overflow-x: hidden;
   display: flex;
   flex-direction: row;
   list-style: none;
@@ -1604,7 +1606,7 @@ body {
   .tabs {
     width: 420px;
   }
-  .tabs__list {
+  .tabs__wrapper {
     width: 270px;
   }
   .tabs__image {
@@ -1621,9 +1623,6 @@ body {
 @media (min-width: 960px) {
   .tabs {
     width: 420px;
-  }
-  .tabs__list {
-    width: 270px;
   }
   .tabs__item:not(.tabs__item--active):hover {
     cursor: pointer;
@@ -1664,7 +1663,7 @@ body {
   .tabs__item {
     padding: 0 15px;
   }
-  .tabs__list {
+  .tabs__wrapper {
     width: 360px;
   }
   .tabs__image {

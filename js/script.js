@@ -1,3 +1,6 @@
+
+//-------------menu---------------
+
 var button = document.querySelector('.navigation__toggle');
 var list = document.querySelector('.navigation__list');
 var nav = document.querySelector('.navigation');
@@ -31,7 +34,7 @@ button.onclick = function(event) {
   };
 }
 
-//stars
+//------------stars--------------
 
 var stars = document.body.querySelectorAll('.dishes__stars');
 
@@ -56,7 +59,7 @@ function setStar(count, parent) {
   }
 }
 
-//links
+//-------------links-------------
 
 var links = document.getElementsByTagName('a');
 
@@ -66,3 +69,80 @@ for(var i = 0; i < links.length; i++) {
     event.preventDefault();
   }
 }
+
+//-------------slider--------------
+
+var btnPrev = document.querySelector('.tabs__arrow--prev');
+var btnNext = document.querySelector('.tabs__arrow--next');
+var list = document.querySelector('.tabs__list');
+var items = list.querySelectorAll('.tabs__item');
+var dishes = document.querySelectorAll('.dishes__item');
+
+var position = 0;
+var indexItem = 1; 
+var numberElem = 1;
+
+
+btnPrev.onclick = function(event) {
+  if (btnPrev.classList.contains('tabs__arrow--disabled')) return;
+  --indexItem;
+
+  if (indexItem == 1) {
+    btnPrev.classList.add('tabs__arrow--disabled');
+  };
+  if (((indexItem + 2) < items.length)&&(btnNext.classList.contains('tabs__arrow--disabled'))) {
+    btnNext.classList.remove('tabs__arrow--disabled');
+  };
+
+  var width = items[0].clientWidth;
+  position += width;
+  list.style.transform = 'translateX(' + position + 'px)';
+};
+
+
+btnNext.onclick = function(event) {
+  if (btnNext.classList.contains('tabs__arrow--disabled')) return;
+  ++indexItem;
+
+  if ((indexItem > 1)&&(btnPrev.classList.contains('tabs__arrow--disabled'))) {
+    btnPrev.classList.remove('tabs__arrow--disabled');
+  };
+  if ((indexItem + 2) == items.length) {
+    btnNext.classList.add('tabs__arrow--disabled');
+  };
+
+  var width = items[0].clientWidth;
+  position -= width;
+  list.style.transform = 'translateX(' + position + 'px)';
+};
+
+
+
+
+for(var i = 0; i < items.length; i++) {
+  var item = items[i];
+  let index = i;
+  item.onclick = function(event) {
+    var activeElem = document.querySelector('.tabs__item--active');
+    var previousElem = document.querySelector('.dishes__item--active');
+    var target = event.target;
+
+    while(target != this) {
+      if (target.tagName == 'LI') {
+        break;
+      }
+      target = target.parentNode;
+    }
+    
+    if (target.classList.contains('tabs__item--active')) return;
+    target.classList.add('tabs__item--active');
+    activeElem.classList.remove('tabs__item--active');
+    
+    previousElem.classList.remove('dishes__item--active');
+    previousElem.classList.add('dishes__item--hidden');
+
+    var dish = dishes[index];
+    dish.classList.remove('dishes__item--hidden');
+    dish.classList.add('dishes__item--active');
+  };
+};

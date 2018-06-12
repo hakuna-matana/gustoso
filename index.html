@@ -100,7 +100,7 @@
   <section class="page-main__dishes  dishes">
     <h2 class="dishes__title visually-hidden">Our dishes</h2>
     <div class="dishes__wrapper">
-      <section class="dishes__item">
+      <section class="dishes__item  dishes__item--active">
         <picture>
           <source media="(min-width: 1260px)" srcset = "img/menu-desktop.png">
           <source media="(min-width: 960px)" srcset = "img/menu-desktop-small.png">
@@ -173,28 +173,67 @@
           </div>
         </div>
       </section>
+      <section class="dishes__item  dishes__item--hidden">
+        <picture>
+          <source media="(min-width: 1260px)" srcset = "img/menu-1-desktop.png">
+          <source media="(min-width: 960px)" srcset = "img/menu-1-desktop-small.png">
+            <source media="(min-width: 768px)" srcset = "img/menu-1_x2.png">
+          <img class="dishes__image" src="img/menu-1_x1.png"  alt="">
+        </picture>
+        <div class="dishes__description">
+          <h3 class="dishes__title">Salami sandwich</h3>
+          <b class="dishes__subtitle">the most popular</b>
+          <p class="dishes__text">Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus.</p>
+          <div class="dishes__time">
+            <b class="dishes__time-text">ready in</b>
+            <p class="dishes__time-value">20</p>
+            <span class="dishes__time-unit">mins</span>
+          </div>
+        </div>
+      </section>
+      <section class="dishes__item  dishes__item--hidden">
+        <picture>
+          <source media="(min-width: 1260px)" srcset = "img/menu-2-desktop.png">
+          <source media="(min-width: 960px)" srcset = "img/menu-2-desktop-small.png">
+            <source media="(min-width: 768px)" srcset = "img/menu-2_x2.png">
+          <img class="dishes__image" src="img/menu-2_x1.png"  alt="">
+        </picture>
+        <div class="dishes__description">
+          <h3 class="dishes__title">Berry dessert</h3>
+          <b class="dishes__subtitle">summer choice</b>
+          <p class="dishes__text">Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus.</p>
+          <div class="dishes__time">
+            <b class="dishes__time-text">ready in</b>
+            <p class="dishes__time-value">5</p>
+            <span class="dishes__time-unit">mins</span>
+          </div>
+        </div>
+      </section>
+
       <div class="dishes__tabs tabs">
         <button class="tabs__arrow tabs__arrow--prev tabs__arrow--disabled" type="button">previous</button>
-        <ul class="tabs__list">
-          <li class="tabs__item  tabs__item--active">
-            <img class="tabs__image" src="img/slider.png" alt="" width="90" height="90">
-          </li>
-          <li class="tabs__item">
-            <img class="tabs__image" src="img/slider_1.png" alt="" width="90" height="90">
-          </li>
-          <li class="tabs__item">
-            <img class="tabs__image" src="img/slider_2.png" alt="" width="90" height="90">
-          </li>
-          <li class="tabs__item">
-            <img class="tabs__image" src="img/slider_3.png" alt="" width="90" height="90">
-          </li>
-          <li class="tabs__item">
-            <img class="tabs__image" src="img/slider.png" alt="" width="90" height="90">
-          </li>
-          <li class="tabs__item">
-            <img class="tabs__image" src="img/slider_2.png" alt="" width="90" height="90">
-          </li>
-        </ul>
+        <div class="tabs__wrapper">
+          <ul class="tabs__list">
+            <li class="tabs__item  tabs__item--active">
+              <img class="tabs__image" src="img/slider.png" alt="" width="90" height="90">
+            </li>
+            <li class="tabs__item">
+              <img class="tabs__image" src="img/slider_1.png" alt="" width="90" height="90">
+            </li>
+            <li class="tabs__item">
+              <img class="tabs__image" src="img/slider_2.png" alt="" width="90" height="90">
+            </li>
+            <li class="tabs__item">
+              <img class="tabs__image" src="img/slider_3.png" alt="" width="90" height="90">
+            </li>
+            <li class="tabs__item">
+              <img class="tabs__image" src="img/slider_1.png" alt="" width="90" height="90">
+            </li>
+            <li class="tabs__item">
+              <img class="tabs__image" src="img/slider_2.png" alt="" width="90" height="90">
+            </li>
+          </ul>
+        </div>
         <button class="tabs__arrow tabs__arrow--next" type="button">next</button>
       </div>
     </div>
