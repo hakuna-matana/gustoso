@@ -74,8 +74,8 @@ for(var i = 0; i < links.length; i++) {
 
 var btnPrev = document.querySelector('.tabs__arrow--prev');
 var btnNext = document.querySelector('.tabs__arrow--next');
-var list = document.querySelector('.tabs__list');
-var items = list.querySelectorAll('.tabs__item');
+var listTab = document.querySelector('.tabs__list');
+var items = listTab.querySelectorAll('.tabs__item');
 var dishes = document.querySelectorAll('.dishes__item');
 
 var position = 0;
@@ -96,7 +96,7 @@ btnPrev.onclick = function(event) {
 
   var width = items[0].clientWidth;
   position += width;
-  list.style.transform = 'translateX(' + position + 'px)';
+  listTab.style.transform = 'translateX(' + position + 'px)';
 };
 
 
@@ -113,9 +113,8 @@ btnNext.onclick = function(event) {
 
   var width = items[0].clientWidth;
   position -= width;
-  list.style.transform = 'translateX(' + position + 'px)';
+  listTab.style.transform = 'translateX(' + position + 'px)';
 };
-
 
 
 
