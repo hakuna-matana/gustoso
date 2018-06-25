@@ -1,4 +1,3 @@
-
 //-------------menu---------------
 
 var button = document.querySelector('.navigation__toggle');
